@@ -82,21 +82,21 @@ def user_input(user_question):
     print(response)
     st.write("Reply: ", response["output_text"])
     
-# Function to redirect to a URL
-def redirect(url):
-    st.markdown(f'<meta http-equiv="refresh" content="0;url={url}" />', unsafe_allow_html=True)
+# # Function to redirect to a URL
+# def redirect(url):
+#     st.markdown(f'<meta http-equiv="refresh" content="0;url={url}" />', unsafe_allow_html=True)
 
 
 
 
 def main():
     st.set_page_config("Chat PDF")
-    st.header("Chat with PDF using Gemini💁")
+    st.header("Want to know anything related to event?💁")
+    st.write('For more info click "More" on left.')
+    
 
     # Create a button
-
-    
-    user_question = st.text_input("Ask a Question from the PDF Files")
+    user_question = st.text_input("Ask a Question:- ")
 
     if user_question:
         user_input(user_question)
