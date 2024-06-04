@@ -124,7 +124,7 @@ def main():
         # Display the button using markdown
         st.markdown(button_html, unsafe_allow_html=True)
 
-        st.write('Click the button to know more about different sports')
+        st.write('Click the button to know more')
 
         st.title("Menu:")
         # pdf_docs = st.file_uploader("Upload your PDF Files and Click on the Submit & Process Button", accept_multiple_files=True)
